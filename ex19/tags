@@ -1,0 +1,70 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+CFLAGS	Makefile	/^CFLAGS = -Wall -g$/;"	m
+Direction	object.h	/^}Direction;$/;"	t	typeref:enum:__anon1
+EAST	object.h	/^	NORTH, SOUTH, EAST, WEST$/;"	e	enum:__anon1
+Map	ex19.h	/^struct Map{$/;"	s
+Map::location	ex19.h	/^	Room *location;$/;"	m	struct:Map	access:public
+Map::proto	ex19.h	/^	Object proto;$/;"	m	struct:Map	access:public
+Map::start	ex19.h	/^	Room *start;$/;"	m	struct:Map	access:public
+Map_attack	ex19.h	/^int Map_attack(void *self, int damage);$/;"	p	signature:(void *self, int damage)
+Map_init	ex19.h	/^int Map_init(void *self);$/;"	p	signature:(void *self)
+Map_move	ex19.h	/^void *Map_move(void *self, Direction direction);$/;"	p	signature:(void *self, Direction direction)
+Monster	ex19.h	/^struct Monster{$/;"	s
+Monster	ex19.h	/^typedef struct Monster Monster;$/;"	t	typeref:struct:Monster
+Monster::hit_point	ex19.h	/^	int hit_point;$/;"	m	struct:Monster	access:public
+Monster::proto	ex19.h	/^	Object proto;$/;"	m	struct:Monster	access:public
+Monster_attack	ex19.h	/^int Monster_attack(void *self, int damage);$/;"	p	signature:(void *self, int damage)
+Monster_init	ex19.h	/^int Monster_init(void *self);$/;"	p	signature:(void *self)
+NEW	object.h	32;"	d
+NORTH	object.h	/^	NORTH, SOUTH, EAST, WEST$/;"	e	enum:__anon1
+Object	object.h	/^}Object;$/;"	t	typeref:struct:__anon2
+Object_attack	object.c	/^int Object_attack(void *self, int damage){$/;"	f	signature:(void *self, int damage)
+Object_describe	object.c	/^void Object_describe(void *self){$/;"	f	signature:(void *self)
+Object_destroy	object.c	/^void Object_destroy(void *self){$/;"	f	signature:(void *self)
+Object_init	object.c	/^int Object_init(void *self){$/;"	f	signature:(void *self)
+Object_move	object.c	/^void *Object_move(void *self, Direction direction){$/;"	f	signature:(void *self, Direction direction)
+Object_new	object.c	/^void *Object_new(size_t size, Object proto, char *description){$/;"	f	signature:(size_t size, Object proto, char *description)
+Room	ex19.h	/^struct Room{$/;"	s
+Room	ex19.h	/^typedef struct Room Room;$/;"	t	typeref:struct:Room
+Room::bad_guy	ex19.h	/^	Monster *bad_guy;$/;"	m	struct:Room	access:public
+Room::east	ex19.h	/^	struct Room *east;$/;"	m	struct:Room	typeref:struct:Room::Room	access:public
+Room::north	ex19.h	/^	struct Room *north;$/;"	m	struct:Room	typeref:struct:Room::Room	access:public
+Room::proto	ex19.h	/^	Object proto;$/;"	m	struct:Room	access:public
+Room::south	ex19.h	/^	struct Room *south;$/;"	m	struct:Room	typeref:struct:Room::Room	access:public
+Room::west	ex19.h	/^	struct Room *west;$/;"	m	struct:Room	typeref:struct:Room::Room	access:public
+Room_attack	ex19.h	/^int Room_attack(void *self, int damage);$/;"	p	signature:(void *self, int damage)
+Room_init	ex19.h	/^int Room_init(void *self);$/;"	p	signature:(void *self)
+Room_move	ex19.h	/^void *Room_move(void *self, Direction direction);$/;"	p	signature:(void *self, Direction direction)
+SOUTH	object.h	/^	NORTH, SOUTH, EAST, WEST$/;"	e	enum:__anon1
+WEST	object.h	/^	NORTH, SOUTH, EAST, WEST$/;"	e	enum:__anon1
+_	object.h	33;"	d
+__anon2::attack	object.h	/^	int (*attack)(void *self, int damage);$/;"	m	struct:__anon2	access:public
+__anon2::describe	object.h	/^	void (*describe)(void *self);$/;"	m	struct:__anon2	access:public
+__anon2::description	object.h	/^	char *description;$/;"	m	struct:__anon2	access:public
+__anon2::destroy	object.h	/^	void (*destroy)(void *self);$/;"	m	struct:__anon2	access:public
+__anon2::init	object.h	/^	int (*init)(void *self);$/;"	m	struct:__anon2	access:public
+__anon2::move	object.h	/^	void *(*move)(void *self, Direction direction);$/;"	m	struct:__anon2	access:public
+_ex19_h	ex19.h	2;"	d
+_object_h	object.h	19;"	d
+attack	object.h	/^	int (*attack)(void *self, int damage);$/;"	m	struct:__anon2	access:public
+bad_guy	ex19.h	/^	Monster *bad_guy;$/;"	m	struct:Room	access:public
+describe	object.h	/^	void (*describe)(void *self);$/;"	m	struct:__anon2	access:public
+description	object.h	/^	char *description;$/;"	m	struct:__anon2	access:public
+destroy	object.h	/^	void (*destroy)(void *self);$/;"	m	struct:__anon2	access:public
+east	ex19.h	/^	struct Room *east;$/;"	m	struct:Room	typeref:struct:Room::Room	access:public
+hit_point	ex19.h	/^	int hit_point;$/;"	m	struct:Monster	access:public
+init	object.h	/^	int (*init)(void *self);$/;"	m	struct:__anon2	access:public
+location	ex19.h	/^	Room *location;$/;"	m	struct:Map	access:public
+move	object.h	/^	void *(*move)(void *self, Direction direction);$/;"	m	struct:__anon2	access:public
+north	ex19.h	/^	struct Room *north;$/;"	m	struct:Room	typeref:struct:Room::Room	access:public
+proto	ex19.h	/^	Object proto;$/;"	m	struct:Map	access:public
+proto	ex19.h	/^	Object proto;$/;"	m	struct:Monster	access:public
+proto	ex19.h	/^	Object proto;$/;"	m	struct:Room	access:public
+south	ex19.h	/^	struct Room *south;$/;"	m	struct:Room	typeref:struct:Room::Room	access:public
+start	ex19.h	/^	Room *start;$/;"	m	struct:Map	access:public
+west	ex19.h	/^	struct Room *west;$/;"	m	struct:Room	typeref:struct:Room::Room	access:public
